@@ -9,7 +9,7 @@
     <div class="card-header">
       <div class="row">
         <div class="col">
-          <a href="/kas" class="btn btn-primary btn-sm">Orang Yang Belum Bayar</a>
+          <a href="/kas" class="btn btn-primary btn-sm">Kas Belum Bayar</a>
         </div>
         <div class="col-md-3">
           <h3 class="text-end">Total :</h3>
