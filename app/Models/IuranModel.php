@@ -44,12 +44,6 @@ class IuranModel extends Model
   public function getUpdate($id = false)
   {
 
-    // $builder = $this->table('iuran');
-    // $builder->join('warga', 'warga.id = iuran.warga_id');
-    // $builder->select('iuran, warga.nama');
-    // $query = $builder->get();
-    // return $query->getResult();
-
     if ($id === false) {
       return $this->findAll();
     }

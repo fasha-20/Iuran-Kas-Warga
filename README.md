@@ -1,3 +1,3 @@
-Demo aplikasi Iuran Kas RT berikut adalah link
+# Link pdf Dokumentasi
 
-<h3><a href="https://youtu.be/MRIBs-DStyg">Demo Aplikasi</a></h3>
+https://drive.google.com/file/d/1S2GHg5jocSfgF4TRwTV0ZVUTp4m4kKIk/view?usp=sharing

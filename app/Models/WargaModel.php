@@ -21,16 +21,6 @@ class WargaModel extends Model
       'nik' => $nik
     ])->first();
   }
-
-  // public function getDetail()
-  // {
-  //   $builder = $this->table('warga');
-  //   $builder->join('iuran', 'iuran.warga_id = warga.id');
-  //   $builder->select('id as warga_id');
-  //   $query = $builder->get();
-  //   return $query->getResultArray();
-  // }
-
   public function getOtomatis()
   {
     $kode = $this->db->table('warga')
@@ -46,18 +36,6 @@ class WargaModel extends Model
 
     return $no;
   }
-
-  // public function getUpdate($id = false)
-  // {
-
-  //   if ($id === false) {
-  //     return $this->findAll();
-  //   }
-
-  //   return $this->where([
-  //     'id' => $id
-  //   ])->first();
-  // }
 
   public function getAll()
   {

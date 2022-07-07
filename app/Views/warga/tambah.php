@@ -20,14 +20,6 @@ $timestamp = $dt->format('Y-m-d');
             </div>
             <div class="card-body">
               <form action="/daftar/save" method="post">
-                <!-- <div class="row mb-3">
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input class="form-control" name="keterangan" id="inputFirstName" type="text" placeholder=""
-                        value="Belum Bayar" readonly />
-                    </div>
-                  </div>
-                </div> -->
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <div class="form-floating mb-3 mb-md-0">

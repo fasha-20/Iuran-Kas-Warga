@@ -18,23 +18,9 @@ class Home extends BaseController
     public function index()
     {
 
-        // $daftar = $this->DaftarModel->findAll();
-
-        // $currentPage = $this->request->getVar('page_warga') ? $this->request->getVar('page_warga') : 1;
-
-        // $keyword = $this->request->getVar('keyword');
-
-        // if ($keyword) {
-        //     $warga = $this->DaftarModel->search($keyword);
-        // } else {
-        //     $warga = $this->DaftarModel;
-        // }
-
         $data = [
             'title' => 'Daftar Warga',
             'all' => $this->WargaModel->getDaftar(),
-            // 'pager'  => $this->DaftarModel->pager,
-            // 'currentPage' => $currentPage
         ];
 
         return view('warga/index', $data);
@@ -94,17 +80,6 @@ class Home extends BaseController
             return redirect()->to('/daftar/tambah')->withInput()->with('validation', $validation);
         }
 
-
-
-
-        // $keterangan = $this->IuranModel->getLunas();
-
-        // if ($keterangan == false) {
-        //     $keterangan = 'Belum Bayar';
-        // } else {
-        //     $keterangan = 'Lunas';
-        // }
-
         $keterangan = 'Belum Bayar';
 
         $tgl = date('Y-m-d');
@@ -112,8 +87,6 @@ class Home extends BaseController
         $thn = date('Y');
 
         $nomer = $this->WargaModel->getOtomatis();
-
-        // $jumlah = $this->IuranModel->getLunas();
         $data = [
             'nik' => $this->request->getPost('nik'),
             'nama' => $this->request->getPost('nama'),
